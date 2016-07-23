@@ -176,6 +176,21 @@ class ShareUtils {
   }
 
   /**
+   * @method _updateOnclick
+   * @description Makes the elements a tag have a onclick attribute
+   * @private
+   *
+   * @param {DOMNode} element
+   * @param {String} url
+   * @param {Object} params
+   */
+  _updateOnclick(element, method) {
+    let a = element.getElementsByTagName('a')[0];
+    a.setAttribute('onclick', method);
+    $('#instagramModal').modal('show');
+  }
+
+  /**
    * @method popup
    * @description Create a window for specified network
    *

@@ -91,6 +91,9 @@ class ShareButton extends ShareUtils {
           enabled: true,
           title: null,
           description: null
+        },
+        instagram: {
+          enabled: true
         }
       }
     };
@@ -184,7 +187,8 @@ class ShareButton extends ShareUtils {
         'googlePlus',
         'reddit',
         'linkedin',
-        'email'
+        'email',
+        'instagram'
       ];
 
     for (let network of Object.keys(this.config.networks)) {
@@ -576,6 +580,15 @@ class ShareButton extends ShareUtils {
       subject: this.config.networks.email.title,
       body: this.config.networks.email.description
     });
+  }
+
+  /**
+   * @method _networkInstagram
+   * @description Create & display an Instagram window
+   * @private
+   */
+  _networkInstagram(element) {
+    this._updateOnclick(element, "$('#instagramModal').modal('show')");
   }
 
   /**

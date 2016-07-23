@@ -27,22 +27,21 @@
     "url": "https://github.com/carrot/share-button"
   },
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer-stylus": "^0.8.0",
     "axis": "^0.5.0",
     "babelify": "^6.3.0",
     "core-js": "^1.2.0",
     "del": "^2.0.2",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-accord": "^0.2.0",
     "gulp-browserify": "^0.5.1",
     "gulp-rename": "^1.2.2",
     "gulp-shell": "^0.5.0",
     "gulp-uglify": "^1.4.1",
+    "gulp-util": "^3.0.7",
     "minifier": "^0.7.1",
-    "pioneer": "^0.11.6",
     "postcss-svg": "^1.0.1",
     "poststylus": "^0.2.1",
     "stylus": "^0.52.4"
